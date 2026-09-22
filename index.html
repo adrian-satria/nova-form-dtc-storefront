@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NOVA FORM — Daily Skin Essentials</title>
+  <meta name="description" content="NOVA FORM is a fictional DTC skincare storefront demo built as a personal WordPress/e-commerce portfolio concept.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#">NOVA<span>FORM</span></a>
+  <nav><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#reviews">Reviews</a></nav>
+  <button class="cart-btn" onclick="openCart()">Cart <span id="cartCount">0</span></button>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">DAILY SKIN ESSENTIALS</p>
+    <h1>Simple routines.<br><em>Better skin.</em></h1>
+    <p class="lead">A focused collection of gentle, everyday skincare designed for uncomplicated routines.</p>
+    <a class="btn dark" href="#shop">Shop the collection</a>
+    <p class="micro">Free shipping on orders over $50</p>
+  </div>
+  <div class="hero-art"><div class="sun"></div><div class="bottle bottle-lg"><span>NOVA<br><b>FORM</b><small>DAILY SPF 50</small></span></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div></div>
+</section>
+<section class="trust"><div><strong>01</strong><span>Gentle formulas</span></div><div><strong>02</strong><span>Simple routines</span></div><div><strong>03</strong><span>Thoughtful packaging</span></div><div><strong>04</strong><span>Made for everyday use</span></div></section>
+<section id="shop" class="shop">
+  <div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Build your routine.</h2></div><p>Three essentials. One uncomplicated routine.</p></div>
+  <div class="products">
+    <article class="product"><div class="product-art serum"><div class="bottle"><span>NOVA<br><b>FORM</b><small>CALM SERUM</small></span></div></div><div class="product-info"><div><h3>Calm Serum</h3><p>Barrier-supporting daily serum</p></div><strong>$28</strong></div><button class="btn add" onclick="addToCart('Calm Serum',28)">Add to cart</button></article>
+    <article class="product"><div class="product-art cleanser"><div class="bottle"><span>NOVA<br><b>FORM</b><small>DAILY CLEANSER</small></span></div></div><div class="product-info"><div><h3>Daily Cleanser</h3><p>Low-foam gentle face wash</p></div><strong>$22</strong></div><button class="btn add" onclick="addToCart('Daily Cleanser',22)">Add to cart</button></article>
+    <article class="product"><div class="product-art spf"><div class="bottle"><span>NOVA<br><b>FORM</b><small>DAILY SPF 50</small></span></div></div><div class="product-info"><div><h3>Daily SPF 50</h3><p>Lightweight broad-spectrum SPF</p></div><strong>$26</strong></div><button class="btn add" onclick="addToCart('Daily SPF 50',26)">Add to cart</button></article>
+  </div>
+</section>
+<section id="story" class="split">
+  <div class="story-art"><div class="orb"></div><div class="mini-bottle"></div></div>
+  <div class="story-copy"><p class="eyebrow">LESS, BUT BETTER</p><h2>Skincare without the clutter.</h2><p>NOVA FORM is a fictional DTC skincare brand created as a portfolio project to demonstrate an e-commerce storefront experience.</p><p>The concept focuses on clear product hierarchy, mobile-friendly layouts, concise product messaging and friction-free calls to action.</p><a class="text-link" href="#shop">Explore products →</a></div>
+</section>
+<section id="reviews" class="reviews"><p class="eyebrow">LOVED BY ROUTINE MINIMALISTS</p><div class="review-grid"><blockquote>“Finally, a routine that doesn't feel like homework.”<cite>— Maya R.</cite></blockquote><blockquote>“Clean product pages and exactly what I need to know.”<cite>— Alex T.</cite></blockquote><blockquote>“The SPF has become my everyday essential.”<cite>— Jordan K.</cite></blockquote></div></section>
+<section class="cta"><p class="eyebrow">START SIMPLE</p><h2>Your everyday routine, refined.</h2><a class="btn light" href="#shop">Shop now</a></section>
+</main>
+<footer><div><a class="logo" href="#">NOVA<span>FORM</span></a><p>Personal DTC e-commerce demo project.</p></div><div class="footer-links"><a href="#shop">Shop</a><a href="#story">About</a><a href="#reviews">Reviews</a></div><small>© 2026 NOVA FORM · Portfolio demo · Fictional brand</small></footer>
+<div id="cart" class="cart-panel" aria-hidden="true"><div class="cart-head"><h3>Your cart</h3><button onclick="closeCart()">×</button></div><div id="cartItems"><p class="empty">Your cart is empty.</p></div><div class="cart-total"><span>Total</span><strong id="cartTotal">$0</strong></div><button class="btn dark checkout" onclick="alert('Demo checkout — no payment is processed.')">Checkout</button></div>
+<div id="overlay" onclick="closeCart()"></div>
+<script src="script.js"></script>
+</body>
+</html>
